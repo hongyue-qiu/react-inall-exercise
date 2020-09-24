@@ -1,9 +1,14 @@
 import React from 'react';
 import './home.less';
+import Nav from "./Nav";
+import Content from "./Content";
 
 const Home = () => {
   return (<div className="home">
-    This is home page
+    <div className="main">
+      <Nav/>
+      <Content />
+    </div>
   </div>);
 };
 
