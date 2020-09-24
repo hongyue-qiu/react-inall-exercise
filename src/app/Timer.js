@@ -50,13 +50,13 @@ class Timer extends Component {
                     <h1>在线倒计时器</h1>
                     <div className="timer_control">
                         <span>设置时间</span>
-                        <input type="text" placeholder="0" value={this.state.time} onChange={(e)=>this.handleSetTimeChange(e)}/>
+                        <input type="text" placeholder="0" onChange={(e)=>this.handleSetTimeChange(e)}/>
                         <div className="submit_click">
                             <input className="submit" type="button" value = "Start"  onClick={sendCode} disabled={this.state.btnDisable}/>
                         </div>
                     </div>
                     <div className="timer_show">
-                        <input type="text" placeholder="0" readOnly="readOnly"/>
+                        <input type="text" placeholder="0" value={this.state.time} readOnly="readOnly"/>
                     </div>
                     <Link to="/" id="backHome" className="backHome">回到主页</Link>
                 </div>
